@@ -12,4 +12,4 @@ D = GROUP C BY word;
 E = FOREACH D GENERATE group, COUNT(C);
 
 -- Store output data in local output directory
-store E into './local-output/WORD_COUNT/';
+store E into './pig-output/WORD_COUNT/';
